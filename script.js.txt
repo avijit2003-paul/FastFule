@@ -1,0 +1,9 @@
+document.getElementById('fuelOrderForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    var fuelType = document.getElementById('fuelType').value;
+    var quantity = document.getElementById('quantity').value;
+
+    var orderDetails = আপনার অর্ডার: ${quantity} লিটার ${fuelType};
+    document.getElementById('orderOutput').innerText = orderDetails;
+});

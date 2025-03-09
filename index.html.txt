@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fast Fuel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Fast Fuel</h1>
+        <p>গাড়ির তেল আপনার দরজায় পৌঁছে দেওয়া হচ্ছে</p>
+    </header>
+
+    <section>
+        <h2>অর্ডার করুন</h2>
+        <form id="fuelOrderForm">
+            <label for="fuelType">তেলের ধরন:</label>
+            <select id="fuelType">
+                <option value="Petrol">পেট্রোল</option>
+                <option value="Diesel">ডিজেল</option>
+            </select>
+            <label for="quantity">পরিমাণ (লিটার):</label>
+            <input type="number" id="quantity" required>
+            <button type="submit">অর্ডার দিন</button>
+        </form>
+    </section>
+
+    <section id="orderDetails">
+        <h2>অর্ডারের বিস্তারিত</h2>
+        <p id="orderOutput"></p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
