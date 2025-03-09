@@ -1,9 +1,17 @@
-document.getElementById('fuelOrderForm').addEventListener('submit', function(event) {
+document.getElementById('orderForm').addEventListener('submit', function(event) {
     event.preventDefault();
+    
+    const fuelType = document.getElementById('fuelType').value;
+    const quantity = document.getElementById('quantity').value;
+    const address = document.getElementById('address').value;
 
-    var fuelType = document.getElementById('fuelType').value;
-    var quantity = document.getElementById('quantity').value;
-
-    var orderDetails = আপনার অর্ডার: ${quantity} লিটার ${fuelType};
-    document.getElementById('orderOutput').innerText = orderDetails;
+    const confirmationMessage = `
+        <h3>Order Confirmation</h3>
+        <p>Fuel Type: ${fuelType}</p>
+        <p>Quantity: ${quantity} liters</p>
+        <p>Delivery Address: ${address}</p>
+        <p>Your order has been placed successfully! We will deliver the fuel to you shortly.</p>
+    `;
+    
+    document.getElementById('orderConfirmation').innerHTML = confirmationMessage;
 });

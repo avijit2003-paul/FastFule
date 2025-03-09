@@ -1,19 +1,31 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
-header {
-    background-color: #4CAF50;
-    color: white;
-    padding: 20px;
-    text-align: center;
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
 }
 
-h1 {
-    margin: 0;
+header nav ul li a {
+    color: white;
+    text-decoration: none;
 }
 
 section {
@@ -21,23 +33,40 @@ section {
     margin: 20px;
 }
 
-h2 {
-    color: #333;
+#orderForm {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 0 auto;
 }
 
-label, select, input, button {
-    font-size: 16px;
-    margin: 10px 0;
+#orderForm label,
+#orderForm input,
+#orderForm select,
+#orderForm textarea {
+    margin-bottom: 10px;
     padding: 8px;
+    font-size: 16px;
 }
 
-button {
+#orderForm button {
+    padding: 10px;
     background-color: #4CAF50;
     color: white;
     border: none;
     cursor: pointer;
 }
 
-button:hover {
+#orderForm button:hover {
     background-color: #45a049;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
